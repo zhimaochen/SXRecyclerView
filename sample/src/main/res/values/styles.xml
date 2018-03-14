@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+
+    <style name="ToolBarTheme" parent="AppTheme.Parent">
+        <!-- Customize theme here. -->
+        <!--<item name="actionModeStyle">@style/CustomActionMode</item>-->
+    </style>
+
+    <style name="AppTheme.Parent" parent="Theme.AppCompat">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="CustomActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/colorPrimary</item>
+        <item name="height">64dp</item>
+    </style>
+</resources>

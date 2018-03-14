@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_header_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightcyan"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/tv_pinnead_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#7F000000"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow_right"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        />
+
+</RelativeLayout>
