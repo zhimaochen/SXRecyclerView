@@ -6,16 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import czm.android.support.v7.widget.DividerItemDecoration;
-import czm.android.support.v7.widget.LinearLayoutManager;
+import czm.android.support.v7.widget.GridLayoutManager;
 import czm.android.support.v7.widget.RecyclerView;
 import czm.android.support.v7.widget.SXRecyclerView;
 
-public class HeaderAndFooterActivity extends AppCompatActivity {
+public class HeaderAndFooterGridLayoutActivity extends AppCompatActivity {
 
 
     SXRecyclerView mRecyclerView;
@@ -26,21 +24,22 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mRecyclerView = (SXRecyclerView) findViewById(R.id.recyclerview);
 
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         mRecyclerView.setAdapter(new Adapter(this));
 
 
         mRecyclerView.setOnItemClickListener(new SXRecyclerView.OnItemClickListener() {
             @Override
             public void onItemClick(RecyclerView parent, View view, int position, long id) {
-                Toast.makeText(HeaderAndFooterActivity.this, "click " + position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(HeaderAndFooterGridLayoutActivity.this, "click " + position, Toast.LENGTH_SHORT).show();
             }
         });
 
 
         initHeaderAndFooter(mRecyclerView);
 
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+
+        mRecyclerView.setSelector(R.drawable.green_ripple_background);
 
     }
 
@@ -54,7 +53,7 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
 
         @Override
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = mLayoutInflater.inflate(R.layout.item_layout, parent, false);
+            View view = mLayoutInflater.inflate(R.layout.grid_item_layout, parent, false);
             return new MyViewHolder(view);
         }
 
@@ -66,7 +65,7 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return 20;
+            return 50;
         }
 
     }
@@ -74,12 +73,10 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
     class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView mTextView;
-        ImageView mImageView;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            mTextView = (TextView) itemView.findViewById(R.id.item_tv);
-            mImageView = (ImageView) itemView.findViewById(R.id.img_check);
+            mTextView = (TextView) itemView.findViewById(R.id.grid_item_tv);
         }
     }
 
@@ -110,7 +107,7 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
                     recyclerView.removeHeaderView(header);
                 } else {
                     isClicked = true;
-                    Toast.makeText(HeaderAndFooterActivity.this, "click Header 1  再次点击删除此Header", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HeaderAndFooterGridLayoutActivity.this, "click Header 1  再次点击删除此Header", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -133,7 +130,7 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
                     recyclerView.removeHeaderView(header2);
                 } else {
                     isClicked = true;
-                    Toast.makeText(HeaderAndFooterActivity.this, "click Header 2  再次点击删除此Header", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HeaderAndFooterGridLayoutActivity.this, "click Header 2  再次点击删除此Header", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -154,7 +151,7 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
                     recyclerView.removeFooterView(footer);
                 } else {
                     isClicked = true;
-                    Toast.makeText(HeaderAndFooterActivity.this, "click Footer  再次点击删除此Footer", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HeaderAndFooterGridLayoutActivity.this, "click Footer  再次点击删除此Footer", Toast.LENGTH_SHORT).show();
                 }
             }
         });

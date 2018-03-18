@@ -77,19 +77,19 @@ public class ItemClickActivity extends AppCompatActivity {
                 case TYPE_ITEM:
                     View view = mLayoutInflater.inflate(R.layout.item_layout, parent, false);
                     return new MyViewHolder(view);
-                    default:
-                        return null;
+                default:
+                    return null;
             }
 
         }
 
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-            if (getItemViewType(position) == TYPE_TITLE){
-                ((TitleViewHolder)holder).mTextView.setText("title");
+            if (getItemViewType(position) == TYPE_TITLE) {
+                ((TitleViewHolder) holder).mTextView.setText("title");
 
-            }else if (getItemViewType(position) == TYPE_ITEM){
-                ((MyViewHolder)holder).mTextView.setText("item " + position);
+            } else if (getItemViewType(position) == TYPE_ITEM) {
+                ((MyViewHolder) holder).mTextView.setText("item " + position);
             }
         }
 
@@ -108,12 +108,13 @@ public class ItemClickActivity extends AppCompatActivity {
 
         /**
          * TYPE_TITLE 类型的Item不需要响应点击、长按事件，故返回false
+         *
          * @param position
          * @return
          */
         @Override
         public boolean isEnable(int position) {
-            if (getItemViewType(position) == TYPE_TITLE){
+            if (getItemViewType(position) == TYPE_TITLE) {
                 return false;
             }
             return true;
@@ -121,7 +122,7 @@ public class ItemClickActivity extends AppCompatActivity {
 
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
+    class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView mTextView;
         ImageView mImageView;

@@ -9,9 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="This is Header View"
-        android:textColor="@android:color/black"
         android:paddingBottom="3dp"
         android:paddingTop="3dp"
+        android:text="This is Header View"
+        android:textColor="@android:color/black"
         android:textSize="16sp" />
 </RelativeLayout>

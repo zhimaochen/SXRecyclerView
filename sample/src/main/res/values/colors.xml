@@ -6,4 +6,10 @@
     <color name="white">#FFFFFF</color>
     <color name="lightcyan">#40E0D0</color>
     <color name="grey">#0A000000</color>
+    <color name="lightgreen">#90EE90</color>
+    <color name="green">#00FF7F</color>
+    <color name="coral">#FF7F50</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="royalblue">#4169E1</color>
+    <color name="aquamarine">#7FFFD4</color>
 </resources>

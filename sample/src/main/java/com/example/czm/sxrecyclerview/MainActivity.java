@@ -43,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
-
     }
 
     class Adapter extends RecyclerView.Adapter<MyViewHolder> {
@@ -90,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         mData.add(new DataBin("ItemClick", ItemClickActivity.class));
         mData.add(new DataBin("MultiChoice", MultiChoiceActivity.class));
         mData.add(new DataBin("Header And Footer", HeaderAndFooterActivity.class));
+        mData.add(new DataBin("Header And Footer GridLayout", HeaderAndFooterGridLayoutActivity.class));
+        mData.add(new DataBin("Header And Footer StaggeredGridLayout", HeaderAndFooterStaggeredGridLayoutActivity.class));
         mData.add(new DataBin("PinnedHeader", PinnedHeaderActivity.class));
     }
 

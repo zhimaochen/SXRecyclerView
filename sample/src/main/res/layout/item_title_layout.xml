@@ -4,14 +4,15 @@
     android:layout_height="36dp"
     android:background="@color/grey"
     android:padding="5dp">
+
     <TextView
         android:id="@+id/title_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
         android:layout_gravity="center_vertical"
         android:paddingEnd="16dp"
-        android:textSize="18sp"/>
+        android:paddingStart="16dp"
+        android:textSize="18sp" />
 
 
 </LinearLayout>

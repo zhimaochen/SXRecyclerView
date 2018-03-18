@@ -41,9 +41,9 @@ public class MultiChoiceActivity extends AppCompatActivity {
         mRecyclerView.setOnItemClickListener(new SXRecyclerView.OnItemClickListener() {
             @Override
             public void onItemClick(RecyclerView parent, View view, int position, long id) {
-                if (mRecyclerView.isInMutiChoiceState()){
+                if (mRecyclerView.isInMutiChoiceState()) {
                     Toast.makeText(MultiChoiceActivity.this, "该数据项不可选中", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     Toast.makeText(MultiChoiceActivity.this, "click " + position, Toast.LENGTH_SHORT).show();
                 }
             }
@@ -52,9 +52,9 @@ public class MultiChoiceActivity extends AppCompatActivity {
         mRecyclerView.setOnItemLongClickListener(new SXRecyclerView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(RecyclerView parent, View view, int position, long id) {
-                if (mRecyclerView.isInMutiChoiceState()){
+                if (mRecyclerView.isInMutiChoiceState()) {
                     Toast.makeText(MultiChoiceActivity.this, "该数据项不可选中", Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     Toast.makeText(MultiChoiceActivity.this, "long click " + position, Toast.LENGTH_SHORT).show();
                 }
                 return true;

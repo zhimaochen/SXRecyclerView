@@ -31,8 +31,25 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name="com.example.czm.sxrecyclerview.HeaderAndFooterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.czm.sxrecyclerview.HeaderAndFooterGridLayoutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.czm.sxrecyclerview.HeaderAndFooterStaggeredGridLayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,6 +64,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

@@ -74,14 +74,6 @@ public class PinnedHeaderActivity extends AppCompatActivity {
             }
         });
 
-        mRecyclerView.setOnItemLongClickListener(new SXRecyclerView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(RecyclerView parent, View view, int position, long id) {
-                Toast.makeText(PinnedHeaderActivity.this, "long click " + position, Toast.LENGTH_SHORT).show();
-                return true;
-            }
-        });
-
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
     }
