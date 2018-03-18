@@ -295,7 +295,7 @@ mRecyclerView.addFooterView(footer);
 
 Header和Footer功能RecyclerView的三种布局方式都能支持，效果如下：
 
-![HeaderAndFooter.gif](https://upload-images.jianshu.io/upload_images/148381-52d82c6fec0953b3.gif?imageMogr2/auto-orient/strip)
+![HeaderAndFooter.gif](screens/HeaderAndFooter.gif)
 ![HeaderAndFooterGrid.gif](https://upload-images.jianshu.io/upload_images/148381-4baa8f0eb264be79.gif?imageMogr2/auto-orient/strip)
 ![HeaderAndFooterStag.gif](https://upload-images.jianshu.io/upload_images/148381-03896a9b9737a0f3.gif?imageMogr2/auto-orient/strip)
 
