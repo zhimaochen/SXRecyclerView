@@ -69,7 +69,7 @@ mRecyclerView.setOnItemLongClickListener(new SXRecyclerView.OnItemLongClickListe
 原生RecyclerView没有该方法，此方法是SXRecyclerView添加的。此方法返回false就代表对应位置的ItemView不启用SXRecyclerView相关功能，也就是说不响应点击事件、长按事件、触摸反馈、多选功能等。该方法默认返回true。
 
 示意图：
-![click.gif](https://upload-images.jianshu.io/upload_images/148381-7f3de273ec0d29d7.gif?imageMogr2/auto-orient/strip)
+![click.gif](screens/click.gif)
 
 ## 多选功能
 
@@ -185,7 +185,7 @@ mRecyclerView.setMultiChoiceModeListener(new SXRecyclerView.MultiChoiceModeListe
 - `public void unCheckedAll()`：全不选
 
 示意图：
-![multichoice.gif](https://upload-images.jianshu.io/upload_images/148381-814ff981610d2192.gif?imageMogr2/auto-orient/strip)
+![multichoice.gif](screens/multichoice.gif)
 
 
 ## PinnedHeader
@@ -255,7 +255,7 @@ mRecyclerView.addOnItemTouchListener(touchListener);
 
 ```
 示意图：
-![pinnedheader.gif](https://upload-images.jianshu.io/upload_images/148381-77bc90c11c4c9b5b.gif?imageMogr2/auto-orient/strip)
+![pinnedheader.gif](screens/pinnedheader.gif)
 
 
 ## Header和Footer
@@ -296,8 +296,8 @@ mRecyclerView.addFooterView(footer);
 Header和Footer功能RecyclerView的三种布局方式都能支持，效果如下：
 
 ![HeaderAndFooter.gif](screens/HeaderAndFooter.gif)
-![HeaderAndFooterGrid.gif](https://upload-images.jianshu.io/upload_images/148381-4baa8f0eb264be79.gif?imageMogr2/auto-orient/strip)
-![HeaderAndFooterStag.gif](https://upload-images.jianshu.io/upload_images/148381-03896a9b9737a0f3.gif?imageMogr2/auto-orient/strip)
+![HeaderAndFooterGrid.gif](screens/HeaderAndFooterGrid.gif)
+![HeaderAndFooterStag.gif](screens/HeaderAndFooterStag.gif)
 
 
 该库我会一直更新维护，以后会逐渐添加更多通用的功能，使用过程中有什么问题可以随时交流~
