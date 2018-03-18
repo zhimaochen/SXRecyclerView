@@ -32,7 +32,7 @@ public interface RecyclerPinnedHeaderAdapter<VH extends SXRecyclerView.ViewHolde
     void onBindHeaderViewHolder(VH holder, int position);
 
     /**
-     * @return
+     * 对应Adapter的getItemCount()方法
      */
     int getItemCount();
 }

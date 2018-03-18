@@ -74,7 +74,7 @@ public class HeaderAndFooterActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return 100;
+            return 20;
         }
 
     }
